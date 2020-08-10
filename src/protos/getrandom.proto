@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package app;
+
+service GetrandomController {
+    rpc getHello(UserName) returns (randomNum);
+}
+
+message UserName{
+    string data = 1;
+}
+
+message randomNum {
+ string data = 1;
+}

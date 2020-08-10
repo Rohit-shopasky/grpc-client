@@ -8,4 +8,4 @@ export const microserviceOptions: ClientOptions = {
     package: 'app',
     protoPath: join(__dirname, '../src/app.proto'),
   },
-};
+}; 

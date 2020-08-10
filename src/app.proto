@@ -6,6 +6,11 @@ service AppController {
     rpc getHello(UserName) returns (GreetMsg);
 }
 
+service GetrandomController {
+    rpc getRandom(UserName) returns (RandomNum);
+}
+
+
 message UserName{
     string data = 1;
 }
@@ -13,3 +18,10 @@ message UserName{
 message GreetMsg {
  string data = 1;
 }
+
+
+
+message RandomNum {
+ string data = 1;
+}
+
